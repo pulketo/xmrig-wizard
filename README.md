@@ -16,9 +16,10 @@ This wizard will guide newbies to be up and running with cpu and nvidia gpu mini
       some classes programmed for this purpose, someday myZenity will have its own repository.
       
   Todo:
-    I'm currently compiling an ISO / USB image with ubuntu desktop and this wizard so anyone from 0-99years could mine cryptonight coins   
-    to be installed using composer or something
-    bugs, maybe a lot... like not having gpu... i will work on this now...
+    * I'm currently compiling an ISO / USB image with ubuntu desktop and this wizard so anyone from 0-99years could mine cryptonight coins   
+    * to be installed using composer or something
+    * bugs, maybe a lot... like not having gpu (fixed)
+    * any bug, not working at all? gmail me at pulketo !
     
      
    
