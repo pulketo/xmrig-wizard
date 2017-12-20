@@ -1,0 +1,27 @@
+{
+    "algo": "cryptonight",
+    "av": 0,
+    "background": false,
+    "colors": true,
+    "cpu-affinity": "0xf",
+    "cpu-priority": 3,
+    "donate-level": 1,
+    "log-file": null,
+    "max-cpu-usage": 90.000000,
+    "print-time": 10,
+    "retries": 5,
+    "retry-pause": 2,
+    "safe": false,
+    "syslog": false,
+    "threads": null,
+    "pools": [
+	{
+            "url": "pool.dero.live:5555",
+            "user": "dERopbTVeEHC9yYjqkfKbzeyppgFuv4YN3mqXtb1BWscfvhkKaNFkzCJQiQBatm2Cg7pk11HARF5HLCRPcFRcPTJ8Q4tCQXVWi",
+            "pass": "x",
+            "keepalive": true,
+            "nicehash": true
+        }
+    ]
+}
+

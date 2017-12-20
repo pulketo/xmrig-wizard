@@ -1,0 +1,23 @@
+{
+    "background": false,
+    "colors": true,
+    "donate-level": 1,
+    "log-file": null,
+    "print-time": 15,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "threads": [
+        {"index": 0, "threads": 30, "blocks": 16, "bfactor": 8, "bsleep": 100 },{"index": 1, "threads": 30, "blocks": 16, "bfactor": 8, "bsleep": 100 }
+    ],
+    "pools": [
+        {
+            "url": "45.32.171.89:4444",
+            "user": "0",
+            "pass": "x",
+            "keepalive": true,
+            "nicehash": true
+        }
+    ]
+}
+

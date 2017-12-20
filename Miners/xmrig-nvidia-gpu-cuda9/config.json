@@ -1,0 +1,23 @@
+{
+    "background": false,
+    "colors": true,
+    "donate-level": 1,
+    "log-file": null,
+    "print-time": 15,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "threads": [
+        {"index": 0, "threads": 12, "blocks": 12, "bfactor": 8, "bsleep": 200 }
+    ],
+    "pools": [
+        {
+            "url": "pool.dero.live:5555",
+            "user": "dERopbTVeEHC9yYjqkfKbzeyppgFuv4YN3mqXtb1BWscfvhkKaNFkzCJQiQBatm2Cg7pk11HARF5HLCRPcFRcPTJ8Q4tCQXVWi",
+            "pass": "x",
+            "keepalive": true,
+            "nicehash": true
+        }
+    ]
+}
+

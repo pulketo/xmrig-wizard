@@ -1,0 +1,26 @@
+{
+    "algo": "cryptonight",
+    "av": 0,
+    "background": false,
+    "colors": true,
+    "cpu-affinity": "0x#affinityHex#",
+    "cpu-priority": 3,
+    "donate-level": 1,
+    "log-file": null,
+    "max-cpu-usage": #maxCPU#,
+    "print-time": 10,
+    "retries": 5,
+    "retry-pause": 2,
+    "safe": false,
+    "syslog": false,
+    "threads": null,
+    "pools": [
+	{
+            "url": "#poolUrl#:#poolPort#",
+            "user": "#myWallet#",
+            "pass": "x",
+            "keepalive": #keepAlive#,
+            "nicehash": true
+        }
+    ]
+}

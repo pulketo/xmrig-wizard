@@ -1,0 +1,23 @@
+{
+    "background": false,
+    "colors": true,
+    "donate-level": 1,
+    "log-file": null,
+    "print-time": 15,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "threads": [
+        {"index": 0, "threads": 16, "blocks": 16, "bfactor": 8, "bsleep": 60 },{"index": 1, "threads": 30, "blocks": 16, "bfactor": 8, "bsleep": 100 }
+    ],
+    "pools": [
+        {
+            "url": "alpha.ultranote.org:5555",
+            "user": "Xun3jHiqh1BVimz5Cs3naXQX1zP8BT7wCaZGTf7j6ZMC3FgJpHFV5nnSjenWJdkp658zEfaz1c2gfT3hsttZKtJM2ALdeZcQt5",
+            "pass": "x",
+            "keepalive": false,
+            "nicehash": true
+        }
+    ]
+}
+

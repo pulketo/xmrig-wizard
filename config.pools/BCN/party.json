@@ -1,0 +1,11 @@
+{
+"comment":"Bytecoin Party Pool",
+"url":"https:\/\/bytecoin.party\/",
+"poolUrl":"pool.bytecoin.party",
+"keepAlive":"true",
+"portDiffComment":[
+  {"port":3333,"diff":500,"comment":"Low End HW"},
+  {"port":5555,"diff":2000, "comment":"Mid end HW"},
+  {"port":7777,"diff":220000,"comment":"High end HW"},
+  {"port":8888,"diff":450000,"comment":"High end HW"}
+]}

@@ -1,0 +1,12 @@
+{
+"comment":"Diffulty is adjusted according Worker HashPower, site is almost always online",
+"url":"https:\/\/bytecoin.uk\/",
+"poolUrl":"bytecoin.uk",
+"keepAlive":"true",
+"portDiffComment":[
+  {"port":3333,"diff":100,"comment":"Old Cpus"},
+  {"port":5555,"diff":500,"comment":"Mid end HW"},
+  {"port":7777,"diff":1064,"comment":"Mid end HW"},
+  {"port":8888,"diff":400000,"comment":"High++ end HW"},
+  {"port":9999,"diff":100000,"comment":"High+ end HW"}
+]}

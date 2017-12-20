@@ -1,0 +1,27 @@
+{
+    "algo": "cryptonight",
+    "av": 0,
+    "background": false,
+    "colors": true,
+    "cpu-affinity": "0xf",
+    "cpu-priority": 3,
+    "donate-level": 1,
+    "log-file": null,
+    "max-cpu-usage": 90.000000,
+    "print-time": 10,
+    "retries": 5,
+    "retry-pause": 2,
+    "safe": false,
+    "syslog": false,
+    "threads": null,
+    "pools": [
+	{
+            "url": "alpha.ultranote.org:5555",
+            "user": "Xun3jHiqh1BVimz5Cs3naXQX1zP8BT7wCaZGTf7j6ZMC3FgJpHFV5nnSjenWJdkp658zEfaz1c2gfT3hsttZKtJM2ALdeZcQt5",
+            "pass": "x",
+            "keepalive": false,
+            "nicehash": true
+        }
+    ]
+}
+

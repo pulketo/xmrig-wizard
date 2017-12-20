@@ -1,0 +1,11 @@
+{
+"comment":"Diffulty is adjusted according Worker HashPower, site is almost always online",
+"url":"https:\/\/intense.hashvault.pro\/",
+"poolUrl":"pool.intense.hashvault.pro",
+"keepAlive":"true",
+"portDiffComment":[
+  {"port":80,"diff":10000,"comment":"FW Bypass"},
+  {"port":3333,"diff":2000,"comment":"Low End HW"},
+  {"port":5555,"diff":10000,"comment":"Mid end HW"},
+  {"port":7777,"diff":20000,"comment":"High end HW"}
+]}

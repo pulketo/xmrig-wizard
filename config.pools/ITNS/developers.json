@@ -1,0 +1,11 @@
+{
+"comment":"IntenseCoin Developers official pool, it's ok to mine there but spread the hashpower",
+"url":"https:\/\/intensecoin.com\/",
+"poolUrl":"45.32.171.89",
+"keepAlive":"true",
+"portDiffComment":[
+  {"port":4444,"diff":2000,"comment":"Low End HW"},
+  {"port":6666,"diff":10000,"comment":"Mid end HW"},
+  {"port":7777,"diff":80000,"comment":"Mid+ end HW"},
+  {"port":9999,"diff":450000,"comment":"High end HW"}
+]}

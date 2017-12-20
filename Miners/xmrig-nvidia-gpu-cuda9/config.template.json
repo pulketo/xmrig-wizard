@@ -1,0 +1,22 @@
+{
+    "background": false,
+    "colors": true,
+    "donate-level": 1,
+    "log-file": null,
+    "print-time": 15,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "threads": [
+        #threads#
+    ],
+    "pools": [
+        {
+            "url": "#poolUrl#:#poolPort#",
+            "user": "#myWallet#",
+            "pass": "x",
+            "keepalive": #keepAlive#,
+            "nicehash": true
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+"comment":"Ultranote Developers official pool, it's ok to mine here but spread the hashpower",
+"url":"https:\/\/pool.ultranote.org\/",
+"poolUrl":"alpha.ultranote.org",
+"keepAlive":"false",
+"portDiffComment":[
+  {"port":5555,"diff":2000,"comment":"Mid end HW"},
+  {"port":7777,"diff":10000,"comment":"High end HW"}
+]}

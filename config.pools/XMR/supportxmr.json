@@ -1,0 +1,13 @@
+{
+"comment":"Diffulty is adjusted according Worker HashPower, site is almost always online, global support",
+"url":"https:\/\/supportxmr.com\/",
+"poolUrl":"pool.supportxmr.com",
+"keepAlive":"true",
+"portDiffComment":[
+  {"port":80,"diff":2000,"comment":"FW Bypass"},
+  {"port":443,"diff":2000,"comment":"SSL FW Bypass"},
+  {"port":3333,"diff":1000,"comment":"Low end HW"},
+  {"port":7777,"diff":25000,"comment":"High end HW"},
+  {"port":8080,"diff":1000,"comment":"FW Bypass"},
+  {"port":5555,"diff":5000,"comment":"Mid Range HW <160H\/s"}
+]}
