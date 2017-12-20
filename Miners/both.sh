@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /home/crypto/Wizard/Miners/
+cd $(dirname $0)
 ./cpu.sh &
 ./gpu.sh &

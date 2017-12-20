@@ -33,10 +33,12 @@ if ($q == "1"){
 $numCpus = trim(`cat /proc/cpuinfo | grep processor | wc -l`);
 $numNvidiaGpus = trim(`nvidia-smi -L|wc -l`);
 $nvidiaGpuList = trim(`nvidia-smi --query-gpu=index,name,uuid,memory.total --format=csv,noheader`);
-/*
+
 // test
-$numNvidiaGpus = 2;
-$nvidiaGpuList.="\n"."1, Quadro 4001, GPU-1624f4a6-ff85-82f5-0012-e46721aea1d5, 1979 MiB";
+/* 
+$numNvidiaGpus = 0;
+// $nvidiaGpuList.="\n"."1, Quadro 4001, GPU-1624f4a6-ff85-82f5-0012-e46721aea1d5, 1979 MiB";
+$nvidiaGpuList="";
 */
 $aesCpu = trim(`cat /proc/cpuinfo | grep flags | grep aes|wc -l`);
 
@@ -136,11 +138,13 @@ $keepAlive = $poolConfig->keepAlive; // <-----
 
 
 // CUDA CONFIG
-$pairs = array( "#keepAlive#" => $poolConfig->keepAlive, "#poolUrl#" => $poolUrl, "#poolPort#" => $poolPort, "#myWallet#" => $myWallet, "#threads#" => $gpuConfig) ;
-$myTemplate = new myTemplate("Miners/xmrig-nvidia-gpu-cuda9/config.template.json", $pairs); 
-$gpuConfigJson = $myTemplate->translation.PHP_EOL;
-@rename("Miners/".MinerGPUDir."/".MinerCfgFile, "Miners/".MinerGPUDir."/".MinerCfgFile.".old-$datetime"); 
-$o = file_put_contents("Miners/".MinerGPUDir."/".MinerCfgFile, $gpuConfigJson);
+if ($numNvidiaGpus>0){
+  $pairs = array( "#keepAlive#" => $poolConfig->keepAlive, "#poolUrl#" => $poolUrl, "#poolPort#" => $poolPort, "#myWallet#" => $myWallet, "#threads#" => $gpuConfig) ;
+  $myTemplate = new myTemplate("Miners/xmrig-nvidia-gpu-cuda9/config.template.json", $pairs); 
+  $gpuConfigJson = $myTemplate->translation.PHP_EOL;
+  @rename("Miners/".MinerGPUDir."/".MinerCfgFile, "Miners/".MinerGPUDir."/".MinerCfgFile.".old-$datetime"); 
+  $o = file_put_contents("Miners/".MinerGPUDir."/".MinerCfgFile, $gpuConfigJson);
+}
 
 // CPU CONFIG
 $pairs = array( "#affinityHex#" => $affinityHex, "#maxCPU#" => $maxCpu, "#keepAlive#" => $poolConfig->keepAlive, 
@@ -148,13 +152,19 @@ $pairs = array( "#affinityHex#" => $affinityHex, "#maxCPU#" => $maxCpu, "#keepAl
 $myTemplate = new myTemplate("Miners/xmrig-cpu-orig/config.template.json", $pairs); 
 $cpuConfigJson = $myTemplate->translation.PHP_EOL;
 @rename("Miners/".MinerCPUDir."/".MinerCfgFile, "Miners/".MinerCPUDir."/".MinerCfgFile.".old-$datetime"); 
-$o .= file_put_contents("Miners/".MinerCPUDir."/".MinerCfgFile, $cpuConfigJson);
+$o = file_put_contents("Miners/".MinerCPUDir."/".MinerCfgFile, $cpuConfigJson);
 
 $q = $myZenity->question("La configuración se ha guardado, ¿deseas probar la configuración?", "¡Simón!", "Nel pastel");
 if ($q == "1"){
-  echo "config.json saved";
+  echo "config.json saved".PHP_EOL;
   exit(0);
 }else{
-  $c = "bash -c 'cd Miners; nohup ./both.sh&'";
-  $e = trim(`$c`);
+  echo "config.json saved, starting miners".PHP_EOL;
+  if ($numNvidiaGpus>0){ 
+    $c = "bash -c 'cd Miners; nohup ./both.sh&'";
+    $e = trim(`$c`);
+  }else{
+    $c = "bash -c 'cd Miners; nohup ./cpu.sh&'";
+    $e = trim(`$c`);
+  }
 }

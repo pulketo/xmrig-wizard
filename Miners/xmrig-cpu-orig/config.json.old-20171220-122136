@@ -16,10 +16,10 @@
     "threads": null,
     "pools": [
 	{
-            "url": "45.32.171.89:4444",
-            "user": "iz4DDGDfYRgRZhiVP1yxMaf4Z7hwTiDeZg6XndjVFkKKNfzFGiCnS7djPgRUfoRR3M7dDizt4r4U9JGthxc59Qhe35mWtZP4k",
+            "url": "alpha.ultranote.org:5555",
+            "user": "Xun3jHiqh1BVimz5Cs3naXQX1zP8BT7wCaZGTf7j6ZMC3FgJpHFV5nnSjenWJdkp658zEfaz1c2gfT3hsttZKtJM2ALdeZcQt5",
             "pass": "x",
-            "keepalive": true,
+            "keepalive": false,
             "nicehash": true
         }
     ]

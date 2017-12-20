@@ -8,12 +8,12 @@
     "retry-pause": 5,
     "syslog": false,
     "threads": [
-        {"index": 0, "threads": 30, "blocks": 16, "bfactor": 8, "bsleep": 100 }
+        {"index": 0, "threads": 12, "blocks": 12, "bfactor": 8, "bsleep": 200 }
     ],
     "pools": [
         {
-            "url": "45.32.171.89:4444",
-            "user": "iz4DDGDfYRgRZhiVP1yxMaf4Z7hwTiDeZg6XndjVFkKKNfzFGiCnS7djPgRUfoRR3M7dDizt4r4U9JGthxc59Qhe35mWtZP4k",
+            "url": "pool.dero.live:5555",
+            "user": "dERopbTVeEHC9yYjqkfKbzeyppgFuv4YN3mqXtb1BWscfvhkKaNFkzCJQiQBatm2Cg7pk11HARF5HLCRPcFRcPTJ8Q4tCQXVWi",
             "pass": "x",
             "keepalive": true,
             "nicehash": true
